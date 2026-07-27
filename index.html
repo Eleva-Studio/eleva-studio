@@ -1,1 +1,1074 @@
 
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#6F1D1B" />
+<meta name="description" content="Premium Shopify Developer & Manager — crafting luxury, high-converting Shopify stores for international brands." />
+<meta name="keywords" content="Shopify Developer, Shopify Expert, Liquid, Theme Development, Store Optimization, Shopify Manager" />
+<meta name="author" content="Aram Manukyan" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Aram Manukyan — Shopify Developer & Manager" />
+<meta property="og:description" content="Crafting luxury, high-converting Shopify stores for international brands." />
+<meta property="og:image" content="https://example.com/og.jpg" />
+<meta property="og:url" content="https://example.com" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Aram Manukyan — Shopify Developer & Manager" />
+<meta name="twitter:description" content="Crafting luxury, high-converting Shopify stores for international brands." />
+<meta name="twitter:image" content="https://example.com/og.jpg" />
+
+<!-- Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Aram Manukyan — Shopify Developer",
+  "description": "Premium Shopify Developer & Manager",
+  "image": "https://example.com/og.jpg",
+  "priceRange": "$$$",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "AM"
+  },
+  "sameAs": [
+    "https://linkedin.com/in/aram",
+    "https://github.com/aram"
+  ]
+}
+</script>
+
+<title>Aram Manukyan — Shopify Developer & Manager</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Loader -->
+<div class="loader" id="loader">
+  <div class="loader__inner">
+    <div class="loader__logo">AM</div>
+    <div class="loader__bar"><span></span></div>
+  </div>
+</div>
+
+<!-- Custom Cursor -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-follower" id="cursorFollower"></div>
+
+<!-- Header -->
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a href="#home" class="logo" aria-label="Home">
+      <span class="logo__mark">A</span>
+      <span class="logo__text">ram<span class="logo__dot">.</span></span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <ul class="nav__list">
+        <li><a href="#home" class="nav__link" data-i18n="nav.home">Home</a></li>
+        <li><a href="#about" class="nav__link" data-i18n="nav.about">About</a></li>
+        <li><a href="#services" class="nav__link" data-i18n="nav.services">Services</a></li>
+        <li><a href="#process" class="nav__link" data-i18n="nav.process">Process</a></li>
+        <li><a href="#portfolio" class="nav__link" data-i18n="nav.portfolio">Portfolio</a></li>
+        <li><a href="#pricing" class="nav__link" data-i18n="nav.pricing">Pricing</a></li>
+        <li><a href="#contact" class="nav__link" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header__actions">
+      <div class="lang-switch" id="langSwitch">
+        <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
+        <button class="lang-btn" data-lang="hy" aria-label="Armenian">HY</button>
+        <button class="lang-btn" data-lang="ru" aria-label="Russian">RU</button>
+      </div>
+
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+
+      <a href="#contact" class="btn btn--primary header__cta" data-i18n="nav.cta">Let's Talk</a>
+
+      <button class="burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero" id="home">
+  <div class="hero__bg">
+    <div class="shape shape--1"></div>
+    <div class="shape shape--2"></div>
+    <div class="shape shape--3"></div>
+    <div class="shape shape--4"></div>
+    <div class="grid-lines"></div>
+    <div class="grain"></div>
+  </div>
+
+  <div class="container hero__inner">
+    <div class="hero__content">
+      <div class="hero__badge reveal">
+        <span class="hero__badge-dot"></span>
+        <span data-i18n="hero.badge">Available for new projects</span>
+      </div>
+
+      <h1 class="hero__title reveal">
+        <span class="hero__title-line" data-i18n="hero.title1">Crafting</span>
+        <span class="hero__title-line hero__title-line--accent">
+          <span data-i18n="hero.title2">Luxury</span>
+          <em data-i18n="hero.title3">Shopify</em>
+        </span>
+        <span class="hero__title-line" data-i18n="hero.title4">Experiences.</span>
+      </h1>
+
+      <p class="hero__subtitle reveal" data-i18n="hero.subtitle">
+        I design and build high-converting, editorial-grade Shopify stores for ambitious brands that refuse to look ordinary.
+      </p>
+
+      <div class="hero__cta reveal">
+        <a href="#portfolio" class="btn btn--primary btn--lg">
+          <span data-i18n="hero.cta1">View My Work</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#contact" class="btn btn--ghost btn--lg">
+          <span data-i18n="hero.cta2">Start a Project</span>
+        </a>
+      </div>
+
+      <div class="hero__stats reveal">
+        <div class="stat">
+          <div class="stat__num" data-count="120">0</div>
+          <div class="stat__label" data-i18n="hero.stat1">Projects Delivered</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num" data-count="8">0</div>
+          <div class="stat__label" data-i18n="hero.stat2">Years of Experience</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num" data-count="45">0</div>
+          <div class="stat__label" data-i18n="hero.stat3">Global Clients</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num" data-count="99">0</div>
+          <div class="stat__label" data-i18n="hero.stat4">Performance Score</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__visual reveal">
+      <div class="hero__photo">
+        <div class="hero__photo-frame">
+          <div class="hero__photo-img">
+            <svg viewBox="0 0 200 240" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="pg" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#E8BD8D"/>
+                  <stop offset="100%" stop-color="#6F1D1B"/>
+                </linearGradient>
+              </defs>
+              <rect width="200" height="240" fill="url(#pg)"/>
+              <circle cx="100" cy="90" r="38" fill="#FAEDCD" opacity="0.9"/>
+              <path d="M30 240 Q30 160 100 160 Q170 160 170 240 Z" fill="#FAEDCD" opacity="0.9"/>
+            </svg>
+          </div>
+        </div>
+        <div class="hero__photo-tag tag tag--1">
+          <span class="tag__dot"></span>
+          <span>Shopify Expert</span>
+        </div>
+        <div class="hero__photo-tag tag tag--2">
+          <span class="tag__dot"></span>
+          <span>Liquid Dev</span>
+        </div>
+        <div class="hero__photo-tag tag tag--3">
+          <span class="tag__dot"></span>
+          <span>CRO</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero__scroll">
+    <span data-i18n="hero.scroll">Scroll</span>
+    <div class="hero__scroll-line"></div>
+  </div>
+</section>
+
+<!-- Marquee -->
+<section class="marquee">
+  <div class="marquee__track">
+    <div class="marquee__item">Shopify Partner</div>
+    <div class="marquee__item">•</div>
+    <div class="marquee__item">Liquid Development</div>
+    <div class="marquee__item">•</div>
+    <div class="marquee__item">Theme Customization</div>
+    <div class="marquee__item">•</div>
+    <div class="marquee__item">Store Optimization</div>
+    <div class="marquee__item">•</div>
+    <div class="marquee__item">Conversion Design</div>
+    <div class="marquee__item">•</div>
+    <div class="marquee__item">Shopify Partner</div>
+    <div class="marquee__item">•</div>
+    <div class="marquee__item">Liquid Development</div>
+    <div class="marquee__item">•</div>
+    <div class="marquee__item">Theme Customization</div>
+    <div class="marquee__item">•</div>
+    <div class="marquee__item">Store Optimization</div>
+    <div class="marquee__item">•</div>
+    <div class="marquee__item">Conversion Design</div>
+    <div class="marquee__item">•</div>
+  </div>
+</section>
+
+<!-- About -->
+<section class="about section" id="about">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-tag" data-i18n="about.tag">About Me</span>
+      <h2 class="section-title">
+        <span data-i18n="about.title1">A developer who treats</span>
+        <span class="section-title--accent" data-i18n="about.title2">every pixel</span>
+        <span data-i18n="about.title3">like a promise.</span>
+      </h2>
+    </div>
+
+    <div class="about__grid">
+      <div class="about__intro reveal">
+        <p class="about__lead" data-i18n="about.lead">
+          I'm Aram — a Shopify developer and manager with 8+ years of experience building stores that feel like flagship boutiques, not templates.
+        </p>
+        <p data-i18n="about.p1">
+          From Yerevan to the world, I've partnered with fashion houses, DTC brands, and luxury retailers to transform their Shopify stores into revenue machines wrapped in editorial design.
+        </p>
+        <p data-i18n="about.p2">
+          My work sits at the intersection of engineering precision and creative direction — where Liquid meets typography, and conversion meets craft.
+        </p>
+      </div>
+
+      <div class="about__cards">
+        <article class="about-card reveal">
+          <div class="about-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3 data-i18n="about.journey.title">My Journey</h3>
+          <p data-i18n="about.journey.text">From my first HTML page in 2016 to leading Shopify builds for international brands — every project sharpened my eye for detail.</p>
+        </article>
+
+        <article class="about-card reveal">
+          <div class="about-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <h3 data-i18n="about.mission.title">My Mission</h3>
+          <p data-i18n="about.mission.text">To build Shopify stores that don't just sell — they seduce. Every interaction should feel inevitable, elegant, and intentional.</p>
+        </article>
+
+        <article class="about-card reveal">
+          <div class="about-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>
+          </div>
+          <h3 data-i18n="about.vision.title">My Vision</h3>
+          <p data-i18n="about.vision.text">A future where every Shopify store feels like a piece of art — where commerce and craft are inseparable.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section class="services section" id="services">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-tag" data-i18n="services.tag">Services</span>
+      <h2 class="section-title">
+        <span data-i18n="services.title1">Everything your</span>
+        <span class="section-title--accent" data-i18n="services.title2">Shopify store</span>
+        <span data-i18n="services.title3">needs to thrive.</span>
+      </h2>
+      <p class="section-sub" data-i18n="services.sub">End-to-end Shopify services — from the first line of Liquid to the final conversion.</p>
+    </div>
+
+    <div class="services__grid">
+      <article class="service reveal">
+        <div class="service__num">01</div>
+        <div class="service__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3h18v18H3z"/><path d="M3 9h18M9 21V9"/></svg>
+        </div>
+        <h3 data-i18n="services.s1.title">Shopify Store Setup</h3>
+        <p data-i18n="services.s1.text">Complete store configuration — domains, payments, shipping, taxes, apps, and launch-ready architecture.</p>
+      </article>
+
+      <article class="service reveal">
+        <div class="service__num">02</div>
+        <div class="service__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/></svg>
+        </div>
+        <h3 data-i18n="services.s2.title">Theme Development</h3>
+        <p data-i18n="services.s2.text">Custom Shopify 2.0 themes built from scratch — OS 2.0 native, blazing fast, and fully tailored to your brand.</p>
+      </article>
+
+      <article class="service reveal">
+        <div class="service__num">03</div>
+        <div class="service__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg>
+        </div>
+        <h3 data-i18n="services.s3.title">Custom Liquid</h3>
+        <p data-i18n="services.s3.text">Bespoke Liquid sections, blocks, and snippets — engineered for performance, maintainability, and brand uniqueness.</p>
+      </article>
+
+      <article class="service reveal">
+        <div class="service__num">04</div>
+        <div class="service__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+        </div>
+        <h3 data-i18n="services.s4.title">Store Management</h3>
+        <p data-i18n="services.s4.text">Ongoing Shopify management — product uploads, collections, promotions, apps, and day-to-day operations.</p>
+      </article>
+
+      <article class="service reveal">
+        <div class="service__num">05</div>
+        <div class="service__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        </div>
+        <h3 data-i18n="services.s5.title">Speed Optimization</h3>
+        <p data-i18n="services.s5.text">Core Web Vitals tuning — image pipelines, lazy loading, script deferring, and 95+ PageSpeed scores.</p>
+      </article>
+
+      <article class="service reveal">
+        <div class="service__num">06</div>
+        <div class="service__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+        </div>
+        <h3 data-i18n="services.s6.title">Bug Fixing</h3>
+        <p data-i18n="services.s6.text">Rapid diagnosis and fixes for Liquid, CSS, JS, and app conflicts — with zero downtime and full backups.</p>
+      </article>
+
+      <article class="service reveal">
+        <div class="service__num">07</div>
+        <div class="service__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+        </div>
+        <h3 data-i18n="services.s7.title">Landing Pages</h3>
+        <p data-i18n="services.s7.text">High-converting landing pages engineered for campaigns, launches, and product drops — with A/B-ready structure.</p>
+      </article>
+
+      <article class="service reveal">
+        <div class="service__num">08</div>
+        <div class="service__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>
+        </div>
+        <h3 data-i18n="services.s8.title">Responsive Design</h3>
+        <p data-i18n="services.s8.text">Pixel-perfect layouts across every breakpoint — mobile-first, touch-optimized, and thumb-friendly.</p>
+      </article>
+
+      <article class="service reveal">
+        <div class="service__num">09</div>
+        <div class="service__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+        </div>
+        <h3 data-i18n="services.s9.title">Custom Sections</h3>
+        <p data-i18n="services.s9.text">Drag-and-drop sections with schema settings — fully editable in the theme editor, zero code for merchants.</p>
+      </article>
+
+      <article class="service reveal">
+        <div class="service__num">10</div>
+        <div class="service__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4zM3 6h18M16 10a4 4 0 0 1-8 0"/></svg>
+        </div>
+        <h3 data-i18n="services.s10.title">Product Pages</h3>
+        <p data-i18n="services.s10.text">Editorial product pages with media galleries, variant swatches, bundles, and conversion-focused layouts.</p>
+      </article>
+
+      <article class="service reveal">
+        <div class="service__num">11</div>
+        <div class="service__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M23 6l-9.5 9.5-5-5L1 18"/><path d="M17 6h6v6"/></svg>
+        </div>
+        <h3 data-i18n="services.s11.title">Shopify CRO</h3>
+        <p data-i18n="services.s11.text">Conversion rate optimization — funnel audits, UX tweaks, and data-driven improvements that move the needle.</p>
+      </article>
+
+      <article class="service reveal">
+        <div class="service__num">12</div>
+        <div class="service__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
+        </div>
+        <h3 data-i18n="services.s12.title">Store Redesign</h3>
+        <p data-i18n="services.s12.text">Full visual and technical redesigns — preserving SEO, migrating data, and elevating the brand experience.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Why Me -->
+<section class="why section">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-tag" data-i18n="why.tag">Why Work With Me</span>
+      <h2 class="section-title">
+        <span data-i18n="why.title1">Not just a developer.</span>
+        <span class="section-title--accent" data-i18n="why.title2">A creative partner.</span>
+      </h2>
+    </div>
+
+    <div class="why__grid">
+      <article class="why-card reveal">
+        <div class="why-card__num">01</div>
+        <h3 data-i18n="why.c1.title">Craft Over Templates</h3>
+        <p data-i18n="why.c1.text">Every store is built from scratch. No cookie-cutter themes. No shortcuts. Just bespoke engineering.</p>
+      </article>
+      <article class="why-card reveal">
+        <div class="why-card__num">02</div>
+        <h3 data-i18n="why.c2.title">Performance Obsessed</h3>
+        <p data-i18n="why.c2.text">95+ PageSpeed, sub-2s LCP, and Core Web Vitals in the green — because speed is revenue.</p>
+      </article>
+      <article class="why-card reveal">
+        <div class="why-card__num">03</div>
+        <h3 data-i18n="why.c3.title">Design-First Mindset</h3>
+        <p data-i18n="why.c3.text">I think like a creative director and build like an engineer. The result is stores that feel expensive.</p>
+      </article>
+      <article class="why-card reveal">
+        <div class="why-card__num">04</div>
+        <h3 data-i18n="why.c4.title">Transparent Process</h3>
+        <p data-i18n="why.c4.text">Weekly updates, clear milestones, and a shared Notion board. You always know where your project stands.</p>
+      </article>
+      <article class="why-card reveal">
+        <div class="why-card__num">05</div>
+        <h3 data-i18n="why.c5.title">Long-Term Partnership</h3>
+        <p data-i18n="why.c5.text">I don't disappear after launch. Ongoing support, iteration, and growth — like an in-house team.</p>
+      </article>
+      <article class="why-card reveal">
+        <div class="why-card__num">06</div>
+        <h3 data-i18n="why.c6.title">Global Standards</h3>
+        <p data-i18n="why.c6.text">International clients in 12+ countries. Fluent in English, Russian, and Armenian. Zero timezone friction.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Skills -->
+<section class="skills section">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-tag" data-i18n="skills.tag">Skills & Stack</span>
+      <h2 class="section-title">
+        <span data-i18n="skills.title1">Tools of the</span>
+        <span class="section-title--accent" data-i18n="skills.title2">trade.</span>
+      </h2>
+    </div>
+
+    <div class="skills__grid">
+      <div class="skill reveal"><div class="skill__bar"><span style="width:98%"></span></div><div class="skill__head"><span>HTML5</span><span>98%</span></div></div>
+      <div class="skill reveal"><div class="skill__bar"><span style="width:96%"></span></div><div class="skill__head"><span>CSS3 / SCSS</span><span>96%</span></div></div>
+      <div class="skill reveal"><div class="skill__bar"><span style="width:92%"></span></div><div class="skill__head"><span>JavaScript</span><span>92%</span></div></div>
+      <div class="skill reveal"><div class="skill__bar"><span style="width:99%"></span></div><div class="skill__head"><span>Liquid</span><span>99%</span></div></div>
+      <div class="skill reveal"><div class="skill__bar"><span style="width:97%"></span></div><div class="skill__head"><span>Shopify</span><span>97%</span></div></div>
+      <div class="skill reveal"><div class="skill__bar"><span style="width:88%"></span></div><div class="skill__head"><span>SEO</span><span>88%</span></div></div>
+      <div class="skill reveal"><div class="skill__bar"><span style="width:85%"></span></div><div class="skill__head"><span>Git / GitHub</span><span>85%</span></div></div>
+      <div class="skill reveal"><div class="skill__bar"><span style="width:95%"></span></div><div class="skill__head"><span>Responsive Design</span><span>95%</span></div></div>
+      <div class="skill reveal"><div class="skill__bar"><span style="width:93%"></span></div><div class="skill__head"><span>Performance</span><span>93%</span></div></div>
+      <div class="skill reveal"><div class="skill__bar"><span style="width:90%"></span></div><div class="skill__head"><span>UX / UI</span><span>90%</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Process -->
+<section class="process section" id="process">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-tag" data-i18n="process.tag">Development Process</span>
+      <h2 class="section-title">
+        <span data-i18n="process.title1">A process built for</span>
+        <span class="section-title--accent" data-i18n="process.title2">clarity.</span>
+      </h2>
+      <p class="section-sub" data-i18n="process.sub">Six steps. Zero surprises. Every milestone communicated.</p>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline__line"></div>
+
+      <div class="timeline__step reveal">
+        <div class="timeline__dot">01</div>
+        <div class="timeline__card">
+          <h3 data-i18n="process.s1.title">Discovery</h3>
+          <p data-i18n="process.s1.text">We align on goals, audience, competitors, and success metrics. I ask the hard questions early.</p>
+        </div>
+      </div>
+
+      <div class="timeline__step reveal">
+        <div class="timeline__dot">02</div>
+        <div class="timeline__card">
+          <h3 data-i18n="process.s2.title">Planning</h3>
+          <p data-i18n="process.s2.text">Sitemap, tech stack, milestones, and a shared roadmap. You approve the plan before a single line of code.</p>
+        </div>
+      </div>
+
+      <div class="timeline__step reveal">
+        <div class="timeline__dot">03</div>
+        <div class="timeline__card">
+          <h3 data-i18n="process.s3.title">Design</h3>
+          <p data-i18n="process.s3.text">Wireframes evolve into high-fidelity mockups. Typography, spacing, and hierarchy — every detail considered.</p>
+        </div>
+      </div>
+
+      <div class="timeline__step reveal">
+        <div class="timeline__dot">04</div>
+        <div class="timeline__card">
+          <h3 data-i18n="process.s4.title">Development</h3>
+          <p data-i18n="process.s4.text">Clean Liquid, modular sections, and performance-first code. You see progress weekly in a staging environment.</p>
+        </div>
+      </div>
+
+      <div class="timeline__step reveal">
+        <div class="timeline__dot">05</div>
+        <div class="timeline__card">
+          <h3 data-i18n="process.s5.title">Testing</h3>
+          <p data-i18n="process.s5.text">Cross-browser, device, and Lighthouse audits. Accessibility checks, checkout flows, and edge-case QA.</p>
+        </div>
+      </div>
+
+      <div class="timeline__step reveal">
+        <div class="timeline__dot">06</div>
+        <div class="timeline__card">
+          <h3 data-i18n="process.s6.title">Launch</h3>
+          <p data-i18n="process.s6.text">DNS, analytics, SEO handoff, and a smooth go-live. Post-launch support included for 30 days.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Portfolio -->
+<section class="portfolio section" id="portfolio">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-tag" data-i18n="portfolio.tag">Selected Work</span>
+      <h2 class="section-title">
+        <span data-i18n="portfolio.title1">Stores that</span>
+        <span class="section-title--accent" data-i18n="portfolio.title2">perform.</span>
+      </h2>
+    </div>
+
+    <div class="portfolio__grid">
+      <article class="project reveal">
+        <div class="project__media">
+          <div class="project__img project__img--1">
+            <span>MAISON NOIR</span>
+          </div>
+          <div class="project__overlay">
+            <a href="#" class="project__view">
+              <span data-i18n="portfolio.view">View Case Study</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="project__info">
+          <div class="project__meta">
+            <span data-i18n="portfolio.p1.cat">Fashion • Paris</span>
+            <span>2025</span>
+          </div>
+          <h3 data-i18n="portfolio.p1.title">Maison Noir</h3>
+          <p data-i18n="portfolio.p1.text">A luxury fashion house — rebuilt on Shopify 2.0 with editorial product pages and +142% conversion lift.</p>
+        </div>
+      </article>
+
+      <article class="project reveal">
+        <div class="project__media">
+          <div class="project__img project__img--2">
+            <span>AURA SKINCARE</span>
+          </div>
+          <div class="project__overlay">
+            <a href="#" class="project__view">
+              <span data-i18n="portfolio.view">View Case Study</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="project__info">
+          <div class="project__meta">
+            <span data-i18n="portfolio.p2.cat">Beauty • Dubai</span>
+            <span>2025</span>
+          </div>
+          <h3 data-i18n="portfolio.p2.title">Aura Skincare</h3>
+          <p data-i18n="portfolio.p2.text">A premium skincare DTC brand — custom subscriptions, bundles, and a 98 PageSpeed score.</p>
+        </div>
+      </article>
+
+      <article class="project reveal">
+        <div class="project__media">
+          <div class="project__img project__img--3">
+            <span>NORTH & CO</span>
+          </div>
+          <div class="project__overlay">
+            <a href="#" class="project__view">
+              <span data-i18n="portfolio.view">View Case Study</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="project__info">
+          <div class="project__meta">
+            <span data-i18n="portfolio.p3.cat">Furniture • Stockholm</span>
+            <span>2024</span>
+          </div>
+          <h3 data-i18n="portfolio.p3.title">North & Co</h3>
+          <p data-i18n="portfolio.p3.text">Scandinavian furniture brand — immersive 3D product views, AR try-on, and multi-currency checkout.</p>
+        </div>
+      </article>
+
+      <article class="project reveal">
+        <div class="project__media">
+          <div class="project__img project__img--4">
+            <span>OLIVIA JEWELS</span>
+          </div>
+          <div class="project__overlay">
+            <a href="#" class="project__view">
+              <span data-i18n="portfolio.view">View Case Study</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="project__info">
+          <div class="project__meta">
+            <span data-i18n="portfolio.p4.cat">Jewelry • New York</span>
+            <span>2024</span>
+          </div>
+          <h3 data-i18n="portfolio.p4.title">Olivia Jewels</h3>
+          <p data-i18n="portfolio.p4.text">A fine-jewelry atelier — editorial lookbooks, custom engraving flow, and a 3.2x AOV increase.</p>
+        </div>
+      </article>
+
+      <article class="project reveal">
+        <div class="project__media">
+          <div class="project__img project__img--5">
+            <span>VERDE ORGANICS</span>
+          </div>
+          <div class="project__overlay">
+            <a href="#" class="project__view">
+              <span data-i18n="portfolio.view">View Case Study</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="project__info">
+          <div class="project__meta">
+            <span data-i18n="portfolio.p5.cat">Wellness • Los Angeles</span>
+            <span>2024</span>
+          </div>
+          <h3 data-i18n="portfolio.p5.title">Verde Organics</h3>
+          <p data-i18n="portfolio.p5.text">An organic wellness brand — subscription engine, quiz funnel, and a 60% drop in cart abandonment.</p>
+        </div>
+      </article>
+
+      <article class="project reveal">
+        <div class="project__media">
+          <div class="project__img project__img--6">
+            <span>ATELIER K</span>
+          </div>
+          <div class="project__overlay">
+            <a href="#" class="project__view">
+              <span data-i18n="portfolio.view">View Case Study</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="project__info">
+          <div class="project__meta">
+            <span data-i18n="portfolio.p6.cat">Art • Berlin</span>
+            <span>2023</span>
+          </div>
+          <h3 data-i18n="portfolio.p6.title">Atelier K</h3>
+          <p data-i18n="portfolio.p6.text">A contemporary art gallery — limited editions, provenance tracking, and a collector-first experience.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="testimonials section">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-tag" data-i18n="testimonials.tag">Client Voices</span>
+      <h2 class="section-title">
+        <span data-i18n="testimonials.title1">Trusted by</span>
+        <span class="section-title--accent" data-i18n="testimonials.title2">founders.</span>
+      </h2>
+    </div>
+
+    <div class="slider">
+      <div class="slider__track" id="sliderTrack">
+        <article class="testimonial">
+          <div class="testimonial__stars">★★★★★</div>
+          <p class="testimonial__text" data-i18n="testimonials.t1.text">"Aram rebuilt our store from the ground up. Conversion doubled in 60 days. He thinks like a creative director and ships like an engineer. Rare combination."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar">SC</div>
+            <div>
+              <div class="testimonial__name" data-i18n="testimonials.t1.name">Sophie Carré</div>
+              <div class="testimonial__role" data-i18n="testimonials.t1.role">Founder, Maison Noir — Paris</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial">
+          <div class="testimonial__stars">★★★★★</div>
+          <p class="testimonial__text" data-i18n="testimonials.t2.text">"The most detail-obsessed Shopify developer I've worked with. Our PageSpeed jumped from 58 to 97. Revenue followed. Cannot recommend enough."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar">DK</div>
+            <div>
+              <div class="testimonial__name" data-i18n="testimonials.t2.name">Daniel Khoury</div>
+              <div class="testimonial__role" data-i18n="testimonials.t2.role">CEO, Aura Skincare — Dubai</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial">
+          <div class="testimonial__stars">★★★★★</div>
+          <p class="testimonial__text" data-i18n="testimonials.t3.text">"Aram delivered a store that feels like a flagship boutique. Our AOV tripled and customers keep asking who designed it. Worth every dollar."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar">EM</div>
+            <div>
+              <div class="testimonial__name" data-i18n="testimonials.t3.name">Emma Lindqvist</div>
+              <div class="testimonial__role" data-i18n="testimonials.t3.role">Creative Director, North & Co — Stockholm</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial">
+          <div class="testimonial__stars">★★★★★</div>
+          <p class="testimonial__text" data-i18n="testimonials.t4.text">"Flawless communication, stunning design, and code that's a joy to maintain. Aram is now our permanent Shopify partner."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar">JR</div>
+            <div>
+              <div class="testimonial__name" data-i18n="testimonials.t4.name">James Roth</div>
+              <div class="testimonial__role" data-i18n="testimonials.t4.role">Founder, Olivia Jewels — New York</div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="slider__controls">
+        <button class="slider__btn slider__btn--prev" id="sliderPrev" aria-label="Previous">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        </button>
+        <div class="slider__dots" id="sliderDots"></div>
+        <button class="slider__btn slider__btn--next" id="sliderNext" aria-label="Next">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Pricing -->
+<section class="pricing section" id="pricing">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-tag" data-i18n="pricing.tag">Pricing</span>
+      <h2 class="section-title">
+        <span data-i18n="pricing.title1">Transparent</span>
+        <span class="section-title--accent" data-i18n="pricing.title2">pricing.</span>
+      </h2>
+      <p class="section-sub" data-i18n="pricing.sub">Three tiers. No hidden fees. Fixed-scope or retainer — your choice.</p>
+    </div>
+
+    <div class="pricing__grid">
+      <article class="price reveal">
+        <div class="price__head">
+          <h3 data-i18n="pricing.starter.title">Starter</h3>
+          <p class="price__desc" data-i18n="pricing.starter.desc">For emerging brands ready to launch.</p>
+        </div>
+        <div class="price__amount">
+          <span class="price__currency">$</span>
+          <span class="price__num">2,400</span>
+        </div>
+        <ul class="price__list">
+          <li data-i18n="pricing.f1">Shopify store setup</li>
+          <li data-i18n="pricing.f2">Premium theme customization</li>
+          <li data-i18n="pricing.f3">Up to 10 products</li>
+          <li data-i18n="pricing.f4">Responsive design</li>
+          <li data-i18n="pricing.f5">Basic SEO setup</li>
+          <li data-i18n="pricing.f6">14-day post-launch support</li>
+        </ul>
+        <a href="#contact" class="btn btn--ghost" data-i18n="pricing.cta">Get Started</a>
+      </article>
+
+      <article class="price price--featured reveal">
+        <div class="price__badge" data-i18n="pricing.badge">Most Popular</div>
+        <div class="price__head">
+          <h3 data-i18n="pricing.pro.title">Professional</h3>
+          <p class="price__desc" data-i18n="pricing.pro.desc">For scaling brands that need craft.</p>
+        </div>
+        <div class="price__amount">
+          <span class="price__currency">$</span>
+          <span class="price__num">5,800</span>
+        </div>
+        <ul class="price__list">
+          <li data-i18n="pricing.f7">Everything in Starter</li>
+          <li data-i18n="pricing.f8">Custom Shopify 2.0 theme</li>
+          <li data-i18n="pricing.f9">Unlimited products</li>
+          <li data-i18n="pricing.f10">Custom Liquid sections</li>
+          <li data-i18n="pricing.f11">Speed optimization (95+)</li>
+          <li data-i18n="pricing.f12">CRO audit & implementation</li>
+          <li data-i18n="pricing.f13">30-day post-launch support</li>
+        </ul>
+        <a href="#contact" class="btn btn--primary" data-i18n="pricing.cta2">Choose Professional</a>
+      </article>
+
+      <article class="price reveal">
+        <div class="price__head">
+          <h3 data-i18n="pricing.prem.title">Premium</h3>
+          <p class="price__desc" data-i18n="pricing.prem.desc">For luxury brands that demand excellence.</p>
+        </div>
+        <div class="price__amount">
+          <span class="price__currency">$</span>
+          <span class="price__num">12,000</span>
+          <span class="price__plus">+</span>
+        </div>
+        <ul class="price__list">
+          <li data-i18n="pricing.f14">Everything in Professional</li>
+          <li data-i18n="pricing.f15">Bespoke design & development</li>
+          <li data-i18n="pricing.f16">Advanced animations & UX</li>
+          <li data-i18n="pricing.f17">Multi-currency & markets</li>
+          <li data-i18n="pricing.f18">Subscription & bundle flows</li>
+          <li data-i18n="pricing.f19">Headless-ready architecture</li>
+          <li data-i18n="pricing.f20">90-day priority support</li>
+        </ul>
+        <a href="#contact" class="btn btn--ghost" data-i18n="pricing.cta3">Talk to Me</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq section" id="faq">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-tag" data-i18n="faq.tag">FAQ</span>
+      <h2 class="section-title">
+        <span data-i18n="faq.title1">Questions,</span>
+        <span class="section-title--accent" data-i18n="faq.title2">answered.</span>
+      </h2>
+    </div>
+
+    <div class="faq__list">
+      <div class="faq__item reveal">
+        <button class="faq__q">
+          <span data-i18n="faq.q1.q">How long does a typical Shopify project take?</span>
+          <span class="faq__icon"></span>
+        </button>
+        <div class="faq__a"><p data-i18n="faq.q1.a">Most projects run 4–8 weeks depending on scope. Starter builds launch in 2–3 weeks; Premium builds with custom design can take 10–12 weeks. You'll get a detailed timeline before we start.</p></div>
+      </div>
+
+      <div class="faq__item reveal">
+        <button class="faq__q">
+          <span data-i18n="faq.q2.q">Do you work with clients outside Armenia?</span>
+          <span class="faq__icon"></span>
+        </button>
+        <div class="faq__a"><p data-i18n="faq.q2.a">Absolutely. Most of my clients are in the US, EU, UAE, and UK. I'm fluent in English, Russian, and Armenian, and I adapt my schedule to your timezone.</p></div>
+      </div>
+
+      <div class="faq__item reveal">
+        <button class="faq__q">
+          <span data-i18n="faq.q3.q">Can you migrate my existing store to Shopify?</span>
+          <span class="faq__icon"></span>
+        </button>
+        <div class="faq__a"><p data-i18n="faq.q3.a">Yes. I handle full migrations from WooCommerce, Magento, BigCommerce, and custom platforms — including products, customers, orders, SEO redirects, and URL preservation.</p></div>
+      </div>
+
+      <div class="faq__item reveal">
+        <button class="faq__q">
+          <span data-i18n="faq.q4.q">Do you provide ongoing support after launch?</span>
+          <span class="faq__icon"></span>
+        </button>
+        <div class="faq__a"><p data-i18n="faq.q4.a">Every project includes post-launch support (14–90 days depending on tier). Beyond that, I offer monthly retainers for ongoing development, optimization, and management.</p></div>
+      </div>
+
+      <div class="faq__item reveal">
+        <button class="faq__q">
+          <span data-i18n="faq.q5.q">What if I already have a theme — can you customize it?</span>
+          <span class="faq__icon"></span>
+        </button>
+        <div class="faq__a"><p data-i18n="faq.q5.a">Yes. I can heavily customize existing themes (Dawn, Prestige, Impulse, etc.) or build custom sections that extend them. I always keep the code clean and upgrade-safe.</p></div>
+      </div>
+
+      <div class="faq__item reveal">
+        <button class="faq__q">
+          <span data-i18n="faq.q6.q">How do payments and contracts work?</span>
+          <span class="faq__icon"></span>
+        </button>
+        <div class="faq__a"><p data-i18n="faq.q6.a">We sign a clear scope-of-work agreement. Payments are split: 40% upfront, 30% at design approval, 30% at launch. I accept wire transfer, Wise, PayPal, and crypto.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="contact section" id="contact">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-tag" data-i18n="contact.tag">Let's Build</span>
+      <h2 class="section-title">
+        <span data-i18n="contact.title1">Have a project</span>
+        <span class="section-title--accent" data-i18n="contact.title2">in mind?</span>
+      </h2>
+      <p class="section-sub" data-i18n="contact.sub">Tell me about your brand. I'll reply within 24 hours.</p>
+    </div>
+
+    <div class="contact__grid">
+      <form class="contact__form reveal" id="contactForm" novalidate>
+        <div class="form-row">
+          <div class="form-field">
+            <label data-i18n="contact.name">Your Name</label>
+            <input type="text" name="name" required />
+          </div>
+          <div class="form-field">
+            <label data-i18n="contact.email">Email</label>
+            <input type="email" name="email" required />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-field">
+            <label data-i18n="contact.company">Company</label>
+            <input type="text" name="company" />
+          </div>
+          <div class="form-field">
+            <label data-i18n="contact.budget">Budget</label>
+            <select name="budget">
+              <option value="2-5k">$2,000 – $5,000</option>
+              <option value="5-10k">$5,000 – $10,000</option>
+              <option value="10-20k">$10,000 – $20,000</option>
+              <option value="20k+">$20,000+</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-field">
+          <label data-i18n="contact.message">Project Details</label>
+          <textarea name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--lg btn--full">
+          <span data-i18n="contact.send">Send Message</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+        </button>
+        <div class="form-status" id="formStatus"></div>
+      </form>
+
+      <aside class="contact__info reveal">
+        <div class="contact__card">
+          <h3 data-i18n="contact.info">Get in touch</h3>
+          <p data-i18n="contact.infoText">Prefer a direct line? Reach out through any of these channels.</p>
+
+          <ul class="contact__channels">
+            <li>
+              <a href="mailto:hello@aram.dev">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+                <div><small data-i18n="contact.email">Email</small><span>hello@aram.dev</span></div>
+              </a>
+            </li>
+            <li>
+              <a href="https://t.me/aram" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg>
+                <div><small>Telegram</small><span>@aram</span></div>
+              </a>
+            </li>
+            <li>
+              <a href="https://linkedin.com/in/aram" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.95v5.66H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+                <div><small>LinkedIn</small><span>/in/aram</span></div>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/aram" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.6.2 2.8.1 3.2.8.8 1.3 1.9 1.3 3.1 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1.2.9 2.4v3.5c0 .3.2.7.8.6A12 12 0 0 0 12 .3"/></svg>
+                <div><small>GitHub</small><span>@aram</span></div>
+              </a>
+            </li>
+            <li>
+              <a href="https://wa.me/37400000000" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-1-.3-.1-.5-.1-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.5 15.2L2 22l4.9-1.3A10 10 0 1 0 12 2zm0 18.3c-1.5 0-3-.4-4.3-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.3 8.3 0 1 1 12 20.3z"/></svg>
+                <div><small>WhatsApp</small><span>+374 00 000 000</span></div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <div><small data-i18n="contact.location">Location</small><span data-i18n="contact.locText">Yerevan, Armenia — Remote Worldwide</span></div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a href="#home" class="logo">
+          <span class="logo__mark">A</span>
+          <span class="logo__text">ram<span class="logo__dot">.</span></span>
+        </a>
+        <p data-i18n="footer.tagline">Crafting luxury Shopify experiences for ambitious brands worldwide.</p>
+      </div>
+
+      <div class="footer__links">
+        <h4 data-i18n="footer.nav">Navigation</h4>
+        <ul>
+          <li><a href="#about" data-i18n="nav.about">About</a></li>
+          <li><a href="#services" data-i18n="nav.services">Services</a></li>
+          <li><a href="#portfolio" data-i18n="nav.portfolio">Portfolio</a></li>
+          <li><a href="#pricing" data-i18n="nav.pricing">Pricing</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__links">
+        <h4 data-i18n="footer.services">Services</h4>
+        <ul>
+          <li><a href="#services" data-i18n="services.s1.title">Shopify Store Setup</a></li>
+          <li><a href="#services" data-i18n="services.s2.title">Theme Development</a></li>
+          <li><a href="#services" data-i18n="services.s3.title">Custom Liquid</a></li>
+          <li><a href="#services" data-i18n="services.s5.title">Speed Optimization</a></li>
+          <li><a href="#services" data-i18n="services.s11.title">Shopify CRO</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__links">
+        <h4 data-i18n="footer.connect">Connect</h4>
+        <ul class="footer__social">
+          <li><a href="mailto:hello@aram.dev">Email</a></li>
+          <li><a href="https://t.me/aram" target="_blank" rel="noopener">Telegram</a></li>
+          <li><a href="https://linkedin.com/in/aram" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://github.com/aram" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://wa.me/37400000000" target="_blank" rel="noopener">WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>© 2026 Aram Manukyan. <span data-i18n="footer.rights">All rights reserved.</span></p>
+      <p data-i18n="footer.made">Crafted with precision in Yerevan.</p>
+    </div>
+  </div>
+</footer>
+
+<a href="#home" class="to-top" id="toTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
