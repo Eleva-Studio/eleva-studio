@@ -2574,15 +2574,15 @@ I'm Lida — a Shopify Developer and Shopify Manager creating premium, conversio
 <input type="text" class="form-input" name="name" required data-i18n-placeholder="formName" placeholder="Your name">
 </div>
 <div class="form-field">
-<input type="email" class="form-input" name="email" required data-i18n-placeholder="formEmail" placeholder="Email address">
+<input type="text" class="form-input" name="company" data-i18n-placeholder="formCompany" placeholder="Company (optional)">
 </div>
 </div>
 <div class="form-row">
 <div class="form-field">
-<input type="text" class="form-input" name="company" data-i18n-placeholder="formCompany" placeholder="Company (optional)">
+<input type="text" class="form-input" name="budget" data-i18n-placeholder="formBudget" placeholder="Budget range">
 </div>
 <div class="form-field">
-<input type="text" class="form-input" name="budget" data-i18n-placeholder="formBudget" placeholder="Budget range">
+<input type="text" class="form-input" name="subject" data-i18n-placeholder="formSubject" placeholder="Project subject">
 </div>
 </div>
 <div class="form-field">
@@ -2743,6 +2743,8 @@ contactLabel: "Let's Talk",
 contactTitle: "Ready to <em>elevate</em> your store?",
 contactSubtitle: "Tell me about your project. I respond to every inquiry within 24 hours — usually much sooner.",
 contactEmail: "Email", contactLocation: "Location", contactLocationValue: "Armenia<br/>Working globally", contactHours: "Response time", contactHoursValue: "Within 24 hours",
+formName: "Your name", formCompany: "Company (optional)", formBudget: "Budget range", formSubject: "Project subject", formMessage: "Tell me about your project...", formSubmit: "Send message",
+formSuccess: "Thank you — your message has been received. I'll be in touch within 24 hours.",
 footerDesc: "Premium Shopify development by Lida Aliyan. Crafting editorial-grade ecommerce experiences for ambitious brands worldwide.",
 footerStudio: "Studio", footerServices: "Services", footerConnect: "Connect",
 footerRights: "All rights reserved. Crafted by Lida Aliyan in Armenia.",
@@ -2829,7 +2831,7 @@ faqA2: "Անշուշտ: Իմ հաճախորդների մեծամասնությո
 faqQ3: "Ի՞նչ է ներառված գործարկումից հետո աջակցության մեջ:",
 faqA3: "Յուրաքանչյուր նախագիծ ներառում է գործարկումից հետո աջակցության ժամանակաշրջան (2-6 շաբաթ)՝ սխալների ուղղում, փոքր կարգավորումներ և կատարողականի մոնիտորինգ:",
 faqQ4: "Կարո՞ղ եք աշխատել իմ գոյություն ունեցող դիզայների հետ:",
-faqA4: "Այո՝ ես հաճախ համագործակցում եմ ներքին թիմերի և արտաքին դիզայներների հետ: Ես հարմար եմ աշխատել Figma ֆայլերից, դիզայնի համակարգերից կամ նույնիսկ կոպիտ wireframe-ներից:",
+faqA4: "Այո՝ ես հաճախ համագործակցում եմ ներքին թիմերի և արտաքին դիզայների հետ: Ես հարմար եմ աշխատել Figma ֆայլերից, դիզայնի համակարգերից կամ նույնիսկ կոպիտ wireframe-ներից:",
 faqQ5: "Առաջարկո՞ւմ եք Shopify Plus ծառայություններ:",
 faqA5: "Այո: Ես ունեմ փորձ Shopify Plus-ում, ներառյալ վճարման ընդլայնելիություն, script editor, launchpad, flow ավտոմատացում և բազմաշուկա կարգավորումներ:",
 faqQ6: "Ի՞նչ է ձեր վճարման կառուցվածքը:",
@@ -2838,6 +2840,8 @@ contactLabel: "Խոսենք",
 contactTitle: "Պատրա՞ստ եք <em>բարձրացնել</em> ձեր խանութը:",
 contactSubtitle: "Պատմեք ինձ ձեր նախագծի մասին: Ես պատասխանում եմ յուրաքանչյուր հարցման 24 ժամվա ընթացքում:",
 contactEmail: "Էլ. փոստ", contactLocation: "Գտնվելու վայր", contactLocationValue: "Հայաստան<br/>Աշխատում եմ ամբողջ աշխարհում", contactHours: "Պատասխանի ժամանակ", contactHoursValue: "24 ժամվա ընթացքում",
+formName: "Ձեր անունը", formCompany: "Ընկերություն (կամավոր)", formBudget: "Բյուջեի տիրույթ", formSubject: "Նախագծի թեմա", formMessage: "Պատմեք ինձ ձեր նախագծի մասին...", formSubmit: "Ուղարկել հաղորդագրությունը",
+formSuccess: "Շնորհակալություն՝ ձեր հաղորդագրությունը ստացվել է: Ես կկապվեմ ձեզ հետ 24 ժամվա ընթացքում:",
 footerDesc: "Պրեմիում Shopify մշակում Լիդա Ալիյանի կողմից: Խմբագրական որակի էլեկտրոնային առևտրի փորձառությունների ստեղծում հավակնոտ բրենդների համար ամբողջ աշխարհում:",
 footerStudio: "Ստուդիա", footerServices: "Ծառայություններ", footerConnect: "Կապ",
 footerRights: "Բոլոր իրավունքները պաշտպանված են: Ստեղծված Լիդա Ալիյանի կողմից Հայաստանում:",
@@ -2933,6 +2937,8 @@ contactLabel: "Давайте поговорим",
 contactTitle: "Готовы <em>возвысить</em> ваш магазин?",
 contactSubtitle: "Расскажите мне о вашем проекте. Я отвечаю на каждый запрос в течение 24 часов — обычно гораздо раньше.",
 contactEmail: "Email", contactLocation: "Местоположение", contactLocationValue: "Армения<br/>Работаю по всему миру", contactHours: "Время ответа", contactHoursValue: "В течение 24 часов",
+formName: "Ваше имя", formCompany: "Компания (необязательно)", formBudget: "Диапазон бюджета", formSubject: "Тема проекта", formMessage: "Расскажите мне о вашем проекте...", formSubmit: "Отправить сообщение",
+formSuccess: "Спасибо — ваше сообщение получено. Я свяжусь с вами в течение 24 часов.",
 footerDesc: "Премиум Shopify-разработка от Лиды Алиян. Создание редакционного уровня e-commerce решений для амбициозных брендов по всему миру.",
 footerStudio: "Студия", footerServices: "Услуги", footerConnect: "Связь",
 footerRights: "Все права защищены. Создано Лидой Алиян в Армении.",
